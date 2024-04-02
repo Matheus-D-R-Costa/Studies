@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Display Média</title>
+        <style>
+            body{
+                text-align:center
+            }
+        </style>
+        <script>
+            function getNumbers(element, n1){
+                let n1 = i.value
+                console.log(n1.value)
+                
+                let displayOnH2 = document.getElementById('displayMedia')
+                displayOnH2.innerHTML = numbers
+                return {
+
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Sua média é de:</h1>
+        <h2 id="displayMedia"></h2>
+        Coloque sua nota da disciplina 1<br><input type="number" oninput="getNumbers(this.n1)"><br><br> 
+        Coloque sua nota da disciplina 2<br><input type="number" oninput='getNumbers(this)' ><br><br>Coloque sua nota da disciplina 3<br><input type="number" oninput="getNumbers(this)"><br> 
+</html>

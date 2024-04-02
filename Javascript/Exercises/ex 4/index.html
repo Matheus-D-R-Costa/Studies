@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Local Storage - persistencia de dados</title>
+        <style>
+            body{
+                text-align:center;
+            }
+        </style>
+        <script>
+            onload = function() {
+                let storageName = localStorage.getItem('name')
+                let h1 = document.getElementById('name')
+                h1.innerHTML = storageName
+            }
+            function attName(element){
+
+                let valor = element.value
+                console.log(valor)
+
+                let h1 = document.getElementById('name')
+                h1.innerHTML = valor
+
+                localStorage.setItem('name', valor)
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <h1 id='name'></h1>
+            <input type='text' oninput='attName(this)'>
+        </div>
+    </body>
+</html>
