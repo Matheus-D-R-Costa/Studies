@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>pai e filho</title>
+        <stlyle>
+
+        </stlyle>
+        <script>
+            window.onload = function(){
+                let h1 = document.getElementsByTagName("h1")
+
+                for (h of h1) {
+                    console.log(h)
+                    h.addEventListener("click", qualOpai)
+                }
+                function qualOpai(e){
+                    let t = e.target
+                    console.log(t.parentElement)
+                }
+            }    
+        </script>
+    </head>
+    <body>
+        <div id="d1">
+            <h1>Título</h1>
+            <p>Cavalo de Troia</p>
+        </div>
+        <div>
+
+        </div id="d2">
+    </body>
+</html>
