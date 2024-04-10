@@ -7,27 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C8447C72BC45CDE0070423A /* FileScanner_D9App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8447C62BC45CDE0070423A /* FileScanner_D9App.swift */; };
-		4C8447CB2BC45CDF0070423A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8447CA2BC45CDF0070423A /* Assets.xcassets */; };
-		4C8447CF2BC45CDF0070423A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8447CE2BC45CDF0070423A /* Preview Assets.xcassets */; };
-		4C8447DB2BC463720070423A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8447DA2BC463720070423A /* ViewModel.swift */; };
-		4C8447DD2BC46B650070423A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8447DC2BC46B650070423A /* Model.swift */; };
-		4C8447DF2BC475120070423A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8447DE2BC475120070423A /* ContentView.swift */; };
+		4C0C1DCB2BC70D5100A44A78 /* _0_OwnApiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0C1DCA2BC70D5100A44A78 /* _0_OwnApiApp.swift */; };
+		4C0C1DCF2BC70D5200A44A78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0C1DCE2BC70D5200A44A78 /* Assets.xcassets */; };
+		4C0C1DD32BC70D5200A44A78 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0C1DD22BC70D5200A44A78 /* Preview Assets.xcassets */; };
+		4C0C1DDB2BC70E8200A44A78 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0C1DDA2BC70E8200A44A78 /* Models.swift */; };
+		4C0C1DDE2BC714F800A44A78 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0C1DDD2BC714F800A44A78 /* ViewModel.swift */; };
+		4C0C1DE12BC7252000A44A78 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0C1DE02BC7252000A44A78 /* ContentView.swift */; };
+		4C0C1DE32BC7286B00A44A78 /* CarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0C1DE22BC7286B00A44A78 /* CarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4C8447C32BC45CDE0070423A /* FileScanner-D9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FileScanner-D9.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C8447C62BC45CDE0070423A /* FileScanner_D9App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileScanner_D9App.swift; sourceTree = "<group>"; };
-		4C8447CA2BC45CDF0070423A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4C8447CC2BC45CDF0070423A /* FileScanner_D9.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FileScanner_D9.entitlements; sourceTree = "<group>"; };
-		4C8447CE2BC45CDF0070423A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		4C8447DA2BC463720070423A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		4C8447DC2BC46B650070423A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		4C8447DE2BC475120070423A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4C0C1DC72BC70D5100A44A78 /* 10-OwnApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "10-OwnApi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C0C1DCA2BC70D5100A44A78 /* _0_OwnApiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0_OwnApiApp.swift; sourceTree = "<group>"; };
+		4C0C1DCE2BC70D5200A44A78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C0C1DD02BC70D5200A44A78 /* _0_OwnApi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = _0_OwnApi.entitlements; sourceTree = "<group>"; };
+		4C0C1DD22BC70D5200A44A78 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4C0C1DDA2BC70E8200A44A78 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		4C0C1DDD2BC714F800A44A78 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		4C0C1DE02BC7252000A44A78 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4C0C1DE22BC7286B00A44A78 /* CarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4C8447C02BC45CDE0070423A /* Frameworks */ = {
+		4C0C1DC42BC70D5100A44A78 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,104 +39,105 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4C8447BA2BC45CDE0070423A = {
+		4C0C1DBE2BC70D5100A44A78 = {
 			isa = PBXGroup;
 			children = (
-				4C8447C52BC45CDE0070423A /* FileScanner-D9 */,
-				4C8447C42BC45CDE0070423A /* Products */,
+				4C0C1DC92BC70D5100A44A78 /* 10-OwnApi */,
+				4C0C1DC82BC70D5100A44A78 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		4C8447C42BC45CDE0070423A /* Products */ = {
+		4C0C1DC82BC70D5100A44A78 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4C8447C32BC45CDE0070423A /* FileScanner-D9.app */,
+				4C0C1DC72BC70D5100A44A78 /* 10-OwnApi.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4C8447C52BC45CDE0070423A /* FileScanner-D9 */ = {
+		4C0C1DC92BC70D5100A44A78 /* 10-OwnApi */ = {
 			isa = PBXGroup;
 			children = (
-				4C8447D72BC45D4B0070423A /* View */,
-				4C8447D62BC45D360070423A /* ViewModel */,
-				4C8447D52BC45D1E0070423A /* Model */,
-				4C8447C62BC45CDE0070423A /* FileScanner_D9App.swift */,
-				4C8447CA2BC45CDF0070423A /* Assets.xcassets */,
-				4C8447CC2BC45CDF0070423A /* FileScanner_D9.entitlements */,
-				4C8447CD2BC45CDF0070423A /* Preview Content */,
+				4C0C1DDF2BC7248D00A44A78 /* Views */,
+				4C0C1DDC2BC714AF00A44A78 /* ViewModel */,
+				4C0C1DD92BC70E3300A44A78 /* Models */,
+				4C0C1DCA2BC70D5100A44A78 /* _0_OwnApiApp.swift */,
+				4C0C1DCE2BC70D5200A44A78 /* Assets.xcassets */,
+				4C0C1DD02BC70D5200A44A78 /* _0_OwnApi.entitlements */,
+				4C0C1DD12BC70D5200A44A78 /* Preview Content */,
 			);
-			path = "FileScanner-D9";
+			path = "10-OwnApi";
 			sourceTree = "<group>";
 		};
-		4C8447CD2BC45CDF0070423A /* Preview Content */ = {
+		4C0C1DD12BC70D5200A44A78 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				4C8447CE2BC45CDF0070423A /* Preview Assets.xcassets */,
+				4C0C1DD22BC70D5200A44A78 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		4C8447D52BC45D1E0070423A /* Model */ = {
+		4C0C1DD92BC70E3300A44A78 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4C8447DC2BC46B650070423A /* Model.swift */,
+				4C0C1DDA2BC70E8200A44A78 /* Models.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		4C8447D62BC45D360070423A /* ViewModel */ = {
+		4C0C1DDC2BC714AF00A44A78 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				4C8447DA2BC463720070423A /* ViewModel.swift */,
+				4C0C1DDD2BC714F800A44A78 /* ViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		4C8447D72BC45D4B0070423A /* View */ = {
+		4C0C1DDF2BC7248D00A44A78 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4C8447DE2BC475120070423A /* ContentView.swift */,
+				4C0C1DE02BC7252000A44A78 /* ContentView.swift */,
+				4C0C1DE22BC7286B00A44A78 /* CarView.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4C8447C22BC45CDE0070423A /* FileScanner-D9 */ = {
+		4C0C1DC62BC70D5100A44A78 /* 10-OwnApi */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4C8447D22BC45CDF0070423A /* Build configuration list for PBXNativeTarget "FileScanner-D9" */;
+			buildConfigurationList = 4C0C1DD62BC70D5200A44A78 /* Build configuration list for PBXNativeTarget "10-OwnApi" */;
 			buildPhases = (
-				4C8447BF2BC45CDE0070423A /* Sources */,
-				4C8447C02BC45CDE0070423A /* Frameworks */,
-				4C8447C12BC45CDE0070423A /* Resources */,
+				4C0C1DC32BC70D5100A44A78 /* Sources */,
+				4C0C1DC42BC70D5100A44A78 /* Frameworks */,
+				4C0C1DC52BC70D5100A44A78 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "FileScanner-D9";
-			productName = "FileScanner-D9";
-			productReference = 4C8447C32BC45CDE0070423A /* FileScanner-D9.app */;
+			name = "10-OwnApi";
+			productName = "10-OwnApi";
+			productReference = 4C0C1DC72BC70D5100A44A78 /* 10-OwnApi.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4C8447BB2BC45CDE0070423A /* Project object */ = {
+		4C0C1DBF2BC70D5100A44A78 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
-					4C8447C22BC45CDE0070423A = {
+					4C0C1DC62BC70D5100A44A78 = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
 			};
-			buildConfigurationList = 4C8447BE2BC45CDE0070423A /* Build configuration list for PBXProject "FileScanner-D9" */;
+			buildConfigurationList = 4C0C1DC22BC70D5100A44A78 /* Build configuration list for PBXProject "10-OwnApi" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -142,44 +145,45 @@
 				en,
 				Base,
 			);
-			mainGroup = 4C8447BA2BC45CDE0070423A;
-			productRefGroup = 4C8447C42BC45CDE0070423A /* Products */;
+			mainGroup = 4C0C1DBE2BC70D5100A44A78;
+			productRefGroup = 4C0C1DC82BC70D5100A44A78 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4C8447C22BC45CDE0070423A /* FileScanner-D9 */,
+				4C0C1DC62BC70D5100A44A78 /* 10-OwnApi */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4C8447C12BC45CDE0070423A /* Resources */ = {
+		4C0C1DC52BC70D5100A44A78 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C8447CF2BC45CDF0070423A /* Preview Assets.xcassets in Resources */,
-				4C8447CB2BC45CDF0070423A /* Assets.xcassets in Resources */,
+				4C0C1DD32BC70D5200A44A78 /* Preview Assets.xcassets in Resources */,
+				4C0C1DCF2BC70D5200A44A78 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4C8447BF2BC45CDE0070423A /* Sources */ = {
+		4C0C1DC32BC70D5100A44A78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C8447DB2BC463720070423A /* ViewModel.swift in Sources */,
-				4C8447C72BC45CDE0070423A /* FileScanner_D9App.swift in Sources */,
-				4C8447DF2BC475120070423A /* ContentView.swift in Sources */,
-				4C8447DD2BC46B650070423A /* Model.swift in Sources */,
+				4C0C1DDB2BC70E8200A44A78 /* Models.swift in Sources */,
+				4C0C1DE32BC7286B00A44A78 /* CarView.swift in Sources */,
+				4C0C1DE12BC7252000A44A78 /* ContentView.swift in Sources */,
+				4C0C1DDE2BC714F800A44A78 /* ViewModel.swift in Sources */,
+				4C0C1DCB2BC70D5100A44A78 /* _0_OwnApiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		4C8447D02BC45CDF0070423A /* Debug */ = {
+		4C0C1DD42BC70D5200A44A78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -240,7 +244,7 @@
 			};
 			name = Debug;
 		};
-		4C8447D12BC45CDF0070423A /* Release */ = {
+		4C0C1DD52BC70D5200A44A78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -293,16 +297,15 @@
 			};
 			name = Release;
 		};
-		4C8447D32BC45CDF0070423A /* Debug */ = {
+		4C0C1DD72BC70D5200A44A78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
-				CODE_SIGN_ENTITLEMENTS = "FileScanner-D9/FileScanner_D9.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "10-OwnApi/_0_OwnApi.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FileScanner-D9/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"10-OwnApi/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -320,7 +323,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Matheus.FileScanner-D9";
+				PRODUCT_BUNDLE_IDENTIFIER = "Matheus.-0-OwnApi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -330,16 +333,15 @@
 			};
 			name = Debug;
 		};
-		4C8447D42BC45CDF0070423A /* Release */ = {
+		4C0C1DD82BC70D5200A44A78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
-				CODE_SIGN_ENTITLEMENTS = "FileScanner-D9/FileScanner_D9.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "10-OwnApi/_0_OwnApi.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FileScanner-D9/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"10-OwnApi/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -357,7 +359,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Matheus.FileScanner-D9";
+				PRODUCT_BUNDLE_IDENTIFIER = "Matheus.-0-OwnApi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -370,25 +372,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4C8447BE2BC45CDE0070423A /* Build configuration list for PBXProject "FileScanner-D9" */ = {
+		4C0C1DC22BC70D5100A44A78 /* Build configuration list for PBXProject "10-OwnApi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C8447D02BC45CDF0070423A /* Debug */,
-				4C8447D12BC45CDF0070423A /* Release */,
+				4C0C1DD42BC70D5200A44A78 /* Debug */,
+				4C0C1DD52BC70D5200A44A78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4C8447D22BC45CDF0070423A /* Build configuration list for PBXNativeTarget "FileScanner-D9" */ = {
+		4C0C1DD62BC70D5200A44A78 /* Build configuration list for PBXNativeTarget "10-OwnApi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C8447D32BC45CDF0070423A /* Debug */,
-				4C8447D42BC45CDF0070423A /* Release */,
+				4C0C1DD72BC70D5200A44A78 /* Debug */,
+				4C0C1DD82BC70D5200A44A78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4C8447BB2BC45CDE0070423A /* Project object */;
+	rootObject = 4C0C1DBF2BC70D5100A44A78 /* Project object */;
 }
