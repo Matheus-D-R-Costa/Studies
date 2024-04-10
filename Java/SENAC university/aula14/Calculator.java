@@ -3,8 +3,7 @@ package aula14;
 import java.util.Scanner;
 
 public class Calculator {
-
-
+    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         double[] grades = new double[5];
@@ -29,8 +28,18 @@ public class Calculator {
             grades[index] = sc.nextDouble();
             finalNote += grades[index] / grades.length;
         }
-        if (finalNote < 40) {
+        if (finalNote < 4) {
             System.out.println("Conceito Medonho");
+        } else if (finalNote <= 6) {
+            System.out.println("Conceito Insátisfatorio");
+        } else if (finalNote <= 7) {
+            System.out.println("Conceito Regular");
+        } else if (finalNote <= 8) {
+            System.out.println("Conceito Satisfatório");
+        } else if (finalNote >= 8 && finalNote <= 10) {
+            System.out.println("Conceito Bom");
+        } else {
+            System.out.println("Por favor, insira novamente suas notas");
+        }
     }
-
 }
