@@ -17,5 +17,5 @@ struct Car : Decodable, Hashable {
     let year : String
     let color : String
     let owner : String
-    let image : String
+    let image : String?
 }
