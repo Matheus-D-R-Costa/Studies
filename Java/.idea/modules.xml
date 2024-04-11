@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Clean Code notes/Capitulo2/Capitulo2.iml" filepath="$PROJECT_DIR$/Clean Code notes/Capitulo2/Capitulo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Clean Code notes/Capitulo3/Capitulo3.iml" filepath="$PROJECT_DIR$/Clean Code notes/Capitulo3/Capitulo3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Studies.iml" filepath="$PROJECT_DIR$/Studies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Notes/java-anatomia-classes/java-anatomia-classes.iml" filepath="$PROJECT_DIR$/Notes/java-anatomia-classes/java-anatomia-classes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Notes/metodos/metodos.iml" filepath="$PROJECT_DIR$/Notes/metodos/metodos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Notes/operadores/operadores.iml" filepath="$PROJECT_DIR$/Notes/operadores/operadores.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Notes/tipos-variaveis/tipos-variaveis.iml" filepath="$PROJECT_DIR$/Notes/tipos-variaveis/tipos-variaveis.iml" />
+    </modules>
+  </component>
+</project>
