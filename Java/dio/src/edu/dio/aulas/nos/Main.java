@@ -15,7 +15,6 @@ public class Main {
         Knot<String> knot_04 = new Knot<>("Cavalo knot_04");
         knot_03.setNextKnot(knot_04);
 
-        // knot_01 -> knot_02 -> knot_03 -> knot 04 -> null
 
         System.out.println(knot_01);
         System.out.println(knot_01.getNextKnot());
