@@ -43,7 +43,8 @@ public class Stack {
 
         while (true) {
             if (assitantKnot != null) {
-                returnString += "[Knot{dado=" + assitantKnot.getData() + "}]\n";
+                returnString += "[K" +
+                        "not{dado=" + assitantKnot.getData() + "}]\n";
                 assitantKnot = assitantKnot.getNextReferanceKnot();
             } else {
                 break;
