@@ -5,6 +5,7 @@ import edu.dio.aulas.testes.Structures.Stack;
 
 public class Workbench {
 
+
     static Stack<String> myStack = new Stack<>();
     static Queue<Integer> myQueue = new Queue<>();
 
