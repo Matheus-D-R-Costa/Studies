@@ -7,6 +7,7 @@ public class ConpanyStock {
     static Scanner scanner = new Scanner(System.in);
     static String option = "";
     static int arraySize;
+    static int closet = 0;
 
     public static void main(String[] args) {
 
@@ -21,7 +22,7 @@ public class ConpanyStock {
             System.out.println("2) Verificar Estoque.");
             System.out.println("3) Consultar Estoque.");
             System.out.println("4) Alterar Tamanho Do Estoque");
-            System.out.println("4) Sair");
+            System.out.println("5) Sair");
 
             option = scanner.next();
 
@@ -56,22 +57,21 @@ public class ConpanyStock {
                 case "3":
 
                     System.out.println("Digite O Nome Do Produto a ser consultado.");
-                    String productConsulted = scanner.next();
+                    String productConsulted = scanner.next().toUpperCase();
 
                     for (String product : products) {
 
-                        if (product.equalsIgnoreCase(productConsulted)) {
-                            System.out.println("Produto " + product + " Existe No Estoque");
+                        if (product.equals(productConsulted)) {
+                            System.out.println("Produto " + productConsulted + " Existe No Armário " + ++closet);
                             break;
                         } else {
-                            System.out.println("Produto Inexistente No Estoque");
-                            break;
+                            System.out.println("Nada Encotrado No Armário " + ++closet);
                         }
                     }
 
                     break;
 
-                case "4":
+                case "5":
                     System.out.println("Aplicação Encerrada.");
                     System.exit(10);
                     break;
