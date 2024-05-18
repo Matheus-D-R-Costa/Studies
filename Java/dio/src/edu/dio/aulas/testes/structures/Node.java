@@ -1,4 +1,4 @@
-package edu.dio.aulas.testes.Structures;
+package edu.dio.aulas.testes.structures;
 
 public class Node<T> {
 

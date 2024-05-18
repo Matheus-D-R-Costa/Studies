@@ -13,7 +13,7 @@ public class StringInverter {
     public static void main(String[] args) {
 
         System.out.println("Digite a palavra que o senhor deseja inverter.");
-        word = scanner.next();
+        word = scanner.nextLine();
         boxOfInvertedWords = new String[]{word};
 
        for (int index = boxOfInvertedWords[0].length() - 1; index >= 0; index--) {

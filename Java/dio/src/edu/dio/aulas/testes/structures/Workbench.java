@@ -1,7 +1,4 @@
-package edu.dio.aulas.testes;
-
-import edu.dio.aulas.testes.Structures.Queue;
-import edu.dio.aulas.testes.Structures.Stack;
+package edu.dio.aulas.testes.structures;
 
 public class Workbench {
 
