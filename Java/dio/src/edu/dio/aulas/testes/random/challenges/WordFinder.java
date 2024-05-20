@@ -1,5 +1,6 @@
 package edu.dio.aulas.testes.random.challenges;
 
+import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -8,13 +9,14 @@ public class WordFinder {
     static Scanner scanner = new Scanner(System.in);
     static String anagram;
     static String option;
-    static String word;
+    static String word = "";
     static String[] words;
 
     public static void main(String[] args) {
 
         System.out.println("Digite o anagrama desejado.");
         anagram = scanner.nextLine();
+        words = new String[anagram.length()];
 
         while (true) {
             System.out.println("Voce deseja encontrar alguma palavra nesse anagrama? (S/N)");
@@ -23,8 +25,9 @@ public class WordFinder {
             switch (option) {
                 case "s":
                     System.out.println("Digite a palavra que desejas procurar.");
-                    word = scanner.next();
-                    words = new String[]{word};
+                    word += scanner.next() + ",";
+                    words = word.split(",");
+                    finder(anagram, words);
                     break;
 
                 case "n":
@@ -39,10 +42,21 @@ public class WordFinder {
 
         }
 
-
     }
 
     public static boolean finder(String anagram, String[] words) {
 
+        for (int index = 0; index < anagram.length(); index++) {
+//            anagram.charAt(index);
+             String wordToFind = words[index];
+
+             //TODO condição para encontrar caracteres iguais.
+
+            if (wordToFind.charAt(index) == anagram.charAt(index)) {
+
+            }
+        }
+
+        return false;
     }
 }
