@@ -1,7 +1,7 @@
 package edu.dio.aulas.testes.random.challenges;
 
+
 import java.util.Arrays;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class WordFinder {
@@ -11,6 +11,9 @@ public class WordFinder {
     static String option;
     static String word = "";
     static String[] words;
+    static char[] anagramBox;
+    static char[] charsOfWordInAlphabeticalOrder;
+
 
     public static void main(String[] args) {
 
@@ -25,8 +28,20 @@ public class WordFinder {
             switch (option) {
                 case "s":
                     System.out.println("Digite a palavra que desejas procurar.");
-                    word += scanner.next() + ",";
-                    words = word.split(",");
+                    word = scanner.next();
+                    charsOfWordInAlphabeticalOrder = word.toCharArray();
+                    Arrays.sort(charsOfWordInAlphabeticalOrder);
+
+                    String wordInAlphabeticOrder = "";
+                    for (int i = 0; i < word.length(); i++) {
+                        wordInAlphabeticOrder += charsOfWordInAlphabeticalOrder[i];
+
+                    }
+
+                    System.out.println(wordInAlphabeticOrder);
+
+                    words = wordInAlphabeticOrder.split(",");
+                    System.out.println(Arrays.toString(words));
                     finder(anagram, words);
                     break;
 
@@ -46,16 +61,15 @@ public class WordFinder {
 
     public static boolean finder(String anagram, String[] words) {
 
-        for (int index = 0; index < anagram.length(); index++) {
-//            anagram.charAt(index);
-             String wordToFind = words[index];
+        anagramBox = anagram.toCharArray();
+        Arrays.sort(anagramBox);
 
-             //TODO condição para encontrar caracteres iguais.
 
-            if (wordToFind.charAt(index) == anagram.charAt(index)) {
+//        for (int i = 0; i < anagram.length(); i++) {
+//
+//        }
 
-            }
-        }
+        System.out.println(anagramBox);
 
         return false;
     }
