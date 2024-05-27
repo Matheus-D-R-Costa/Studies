@@ -1,11 +1,8 @@
 package edu.senac.intro.aulas.vintequatro;
 
-import java.util.Random;
-
-public class matriz {
+public class bidimensionalArray {
 
     static int[][] box = new int[4][];
-    static Random random = new Random();
 
     public static void main(String[] args) {
 

@@ -9,17 +9,12 @@ public class WordFinder {
     static Scanner scanner = new Scanner(System.in);
     static String anagram;
     static String option;
-    static String word = "";
-    static String[] words;
-    static char[] anagramBox;
-    static char[] charsOfWordInAlphabeticalOrder;
-
+    static String word;
 
     public static void main(String[] args) {
 
         System.out.println("Digite o anagrama desejado.");
         anagram = scanner.nextLine();
-        words = new String[anagram.length()];
 
         while (true) {
             System.out.println("Voce deseja encontrar alguma palavra nesse anagrama? (S/N)");
@@ -29,20 +24,7 @@ public class WordFinder {
                 case "s":
                     System.out.println("Digite a palavra que desejas procurar.");
                     word = scanner.next();
-                    charsOfWordInAlphabeticalOrder = word.toCharArray();
-                    Arrays.sort(charsOfWordInAlphabeticalOrder);
-
-                    String wordInAlphabeticOrder = "";
-                    for (int i = 0; i < word.length(); i++) {
-                        wordInAlphabeticOrder += charsOfWordInAlphabeticalOrder[i];
-
-                    }
-
-                    System.out.println(wordInAlphabeticOrder);
-
-                    words = wordInAlphabeticOrder.split(",");
-                    System.out.println(Arrays.toString(words));
-                    finder(anagram, words);
+                    finder(anagram, word);
                     break;
 
                 case "n":
@@ -59,18 +41,30 @@ public class WordFinder {
 
     }
 
-    public static boolean finder(String anagram, String[] words) {
+    public static boolean finder(String anagram, String word) {
+        char[] charsOfAnagramInAlphabeticalOrder = anagram.toCharArray();
+        char[] charsOfWordInAlphabeticalOrder = word.toCharArray();
 
-        anagramBox = anagram.toCharArray();
-        Arrays.sort(anagramBox);
+        String product = "";
 
+        for (int i = 0; i < charsOfAnagramInAlphabeticalOrder.length; i++) {
+            for (int j = 0; j < charsOfWordInAlphabeticalOrder.length; j++) {
+                if (charsOfAnagramInAlphabeticalOrder[i] == charsOfWordInAlphabeticalOrder[j]) {
+                    product += charsOfAnagramInAlphabeticalOrder[i];
+                    charsOfWordInAlphabeticalOrder[j] = ' ';
+                }
+            }
+        }
 
-//        for (int i = 0; i < anagram.length(); i++) {
-//
-//        }
+        char[] charsOfProductInAlphabeticalOrder = product.toCharArray();
+        Arrays.sort(charsOfProductInAlphabeticalOrder);
 
-        System.out.println(anagramBox);
+        charsOfWordInAlphabeticalOrder = word.toCharArray();
+        Arrays.sort(charsOfWordInAlphabeticalOrder);
 
-        return false;
+        System.out.println(Arrays.toString(charsOfProductInAlphabeticalOrder));
+        System.out.println(Arrays.toString(charsOfWordInAlphabeticalOrder));
+
+        return Arrays.equals(charsOfProductInAlphabeticalOrder, charsOfWordInAlphabeticalOrder);
     }
 }
