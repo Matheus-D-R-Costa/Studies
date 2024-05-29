@@ -36,9 +36,7 @@ public class WordFinder {
                     System.out.println("Opção inexistente. Tente novamente com (S/N)");
                     break;
             }
-
         }
-
     }
 
     public static boolean finder(String anagram, String word) {
