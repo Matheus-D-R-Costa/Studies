@@ -65,4 +65,33 @@ public class BinaryTree<T  extends Comparable<T>> {
         }
     }
 
+    public void remove(T content) {
+        try {
+
+            BinaryNode<T> currentBinaryNode = this.root;
+            BinaryNode<T> fatherBinaryNode = null;
+            BinaryNode<T> sonBinaryNode = null;
+            BinaryNode<T> temporaryBinaryNode = null;
+
+            while (currentBinaryNode != null && !currentBinaryNode.getContent().equals(content)) {
+                fatherBinaryNode = currentBinaryNode;
+
+                if (content.compareTo(currentBinaryNode.getContent()) < 0 ) {
+                    currentBinaryNode = currentBinaryNode.getLeftNode();
+                } else {
+                    currentBinaryNode = currentBinaryNode.getRightNode();
+                }
+            }
+
+            if (currentBinaryNode == null) {
+                System.out.println("Conteudo nao existente. Bloco try");
+            }
+
+
+
+        } catch (NullPointerException error) {
+            System.out.println("Conteudo nao existente. Bloco catch");
+        }
+    }
+
 }
