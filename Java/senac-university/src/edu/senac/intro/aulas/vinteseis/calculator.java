@@ -5,53 +5,60 @@ import java.util.Scanner;
 public class calculator {
 
     static Scanner scanner = new Scanner(System.in);
-    static int numberX;
-    static int numberY;
-    static int result;
+    static double numberX;
+    static double numberY;
+    static char arithmeticOperation;
 
     public static void main(String[] args) {
 
-        calculate(2,3, "+");
+        System.out.println("Digite um número x");
+        numberX = scanner.nextDouble();
+
+        System.out.println("Digite um número y");
+        numberY = scanner.nextDouble();
+
+        System.out.println("Escolha a operação Operação desejada. utilize (+, -, *, /)");
+        arithmeticOperation = scanner.next().charAt(0);
+
+        calculate(numberX, numberY, arithmeticOperation);
 
     }
 
-    static void calculate(int numberX, int numberY, String arithmeticOperation) {
+    static void calculate(double numberX, double numberY, char arithmeticOperation) {
 
         switch (arithmeticOperation) {
-            case "+":
-                sum(numberX, numberY);
+            case '+':
+                System.out.println("resultado: " + sum(numberX, numberY));
                 break;
-            case "-":
-                subtraction(numberX, numberY);
+            case '-':
+                System.out.println("resultado: " + subtraction(numberX, numberY));
                 break;
-            case "*":
-                multiply(numberX, numberY);
+            case '*':
+                System.out.println("resultado: " + multiply(numberX, numberY));
                 break;
-            case "/":
-                divide(numberX, numberY);
+            case '/':
+                System.out.println("resultado: " + divide(numberX, numberY));
                 break;
             default:
                 System.out.println("Operação inexistente. utilize (+, -, *, /)");
         }
 
-        System.out.println(result);
-
     }
 
-    private static void sum(int numberX, int numberY) {
-        result = numberX + numberY;
+    private static double sum(double numberX, double numberY) {
+        return numberX + numberY;
     }
 
-    private static void subtraction(int numberX, int numberY) {
-        result = numberX - numberY;
+    private static double subtraction(double numberX, double numberY) {
+        return numberX - numberY;
     }
 
-    private static void multiply(int numberX, int numberY) {
-        result = numberX * numberY;
+    private static double multiply(double numberX, double numberY) {
+        return numberX * numberY;
     }
 
-    private static void divide(int numberX, int numberY) {
-        result = numberX / numberY;
+    private static double divide(double numberX, double numberY) {
+        return numberX / numberY;
     }
 
 

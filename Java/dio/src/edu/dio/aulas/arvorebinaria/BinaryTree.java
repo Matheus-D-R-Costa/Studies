@@ -1,6 +1,6 @@
 package edu.dio.aulas.arvorebinaria;
 
-public class BinaryTree<T  extends Comparable<T>> {
+public class BinaryTree<T extends Comparable<T>> {
 
     private BinaryNode<T> root;
 
@@ -76,7 +76,7 @@ public class BinaryTree<T  extends Comparable<T>> {
             while (currentBinaryNode != null && !currentBinaryNode.getContent().equals(content)) {
                 fatherBinaryNode = currentBinaryNode;
 
-                if (content.compareTo(currentBinaryNode.getContent()) < 0 ) {
+                if (content.compareTo(currentBinaryNode.getContent()) < 0) {
                     currentBinaryNode = currentBinaryNode.getLeftNode();
                 } else {
                     currentBinaryNode = currentBinaryNode.getRightNode();
@@ -87,7 +87,58 @@ public class BinaryTree<T  extends Comparable<T>> {
                 System.out.println("Conteudo nao existente. Bloco try");
             }
 
+            if (fatherBinaryNode == null) {
+                if (currentBinaryNode.getRightNode() == null) {
+                    this.root = currentBinaryNode.getLeftNode();
+                } else if (currentBinaryNode.getLeftNode() == null) {
+                    this.root = currentBinaryNode.getRightNode();
+                } else {
+                    for (temporaryBinaryNode = currentBinaryNode, sonBinaryNode = currentBinaryNode.getLeftNode();
+                         sonBinaryNode.getRightNode() != null;
+                         temporaryBinaryNode = sonBinaryNode, sonBinaryNode = sonBinaryNode.getLeftNode()
+                    ) {
+                        if (sonBinaryNode != currentBinaryNode.getLeftNode()) {
+                            temporaryBinaryNode.setRightNode(sonBinaryNode.getLeftNode());
+                            sonBinaryNode.setLeftNode(root.getLeftNode());
+                        }
+                    }
 
+                    sonBinaryNode.setRightNode(root.getRightNode());
+                    root = sonBinaryNode;
+
+                }
+            } else if (currentBinaryNode.getRightNode() == null) {
+                if (fatherBinaryNode.getLeftNode() == currentBinaryNode) {
+                    fatherBinaryNode.setLeftNode(currentBinaryNode.getLeftNode());
+                } else {
+                    fatherBinaryNode.setRightNode(currentBinaryNode.getLeftNode());
+                }
+            } else if (currentBinaryNode.getLeftNode() == null) {
+                if (fatherBinaryNode.getLeftNode() == currentBinaryNode) {
+                    fatherBinaryNode.setLeftNode(currentBinaryNode.getRightNode());
+                } else {
+                    fatherBinaryNode.setRightNode(currentBinaryNode.getRightNode());
+                }
+            } else {
+                for (
+                        temporaryBinaryNode = currentBinaryNode, sonBinaryNode = currentBinaryNode.getLeftNode();
+                        sonBinaryNode.getRightNode() != null;
+                        temporaryBinaryNode = sonBinaryNode, sonBinaryNode = sonBinaryNode.getRightNode()
+                ) {
+                    if (sonBinaryNode != currentBinaryNode.getLeftNode()) {
+                        temporaryBinaryNode.setRightNode(sonBinaryNode.getLeftNode());
+                        sonBinaryNode.setLeftNode(currentBinaryNode.getLeftNode());
+                    }
+
+                    sonBinaryNode.setRightNode(currentBinaryNode.getRightNode());
+
+                    if (fatherBinaryNode.getLeftNode() == currentBinaryNode) {
+                        fatherBinaryNode.setLeftNode(sonBinaryNode);
+                    } else {
+                        fatherBinaryNode.setRightNode(sonBinaryNode);
+                    }
+                }
+            }
 
         } catch (NullPointerException error) {
             System.out.println("Conteudo nao existente. Bloco catch");
