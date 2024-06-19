@@ -1,4 +1,4 @@
-package edu.dio.aulas.collections.lists;
+package edu.dio.aulas.collections.lists.exercises;
 
 import java.util.ArrayList;
 import java.util.Scanner;
