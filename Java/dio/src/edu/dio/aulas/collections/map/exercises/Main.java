@@ -62,6 +62,25 @@ public class Main {
 
         System.out.println("--\t Média da população dos Estados\t--");
         System.out.println("NO/NE - " + sum / statesInHashMap.size() + " Pessoas.");
+        System.out.println( );
+
+        System.out.println("--\t Estados com Mais de 4 milhões de pessoas.");
+        Iterator<Map.Entry<String, State>> iterator = statesInHashMap.entrySet().iterator();
+        while (iterator.hasNext()) {
+            Map.Entry<String, State> entry = iterator.next();
+            if (entry.getValue().getPopulation() < 4000000) {
+                iterator.remove();
+            }
+        }
+
+        printer(statesInHashMap);
+
+        statesInHashMap.clear();
+        System.out.println("--\tEstados vazios?\t--");
+        System.out.println(statesInHashMap.isEmpty());
+
+        printer(statesInHashMap);
+
     }
 
     static void printer(Map<String, State> states) {
@@ -77,5 +96,9 @@ public class Main {
 
         System.out.println();
 
+    }
+
+    static Iterator<Integer> getPopulationIterator(Map<String, State> states) {
+        return states.values().stream().map(State::getPopulation).iterator();
     }
 }
