@@ -1,9 +1,6 @@
 package edu.dio.aulas.collections.map.methods;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class CarExample {
 
@@ -41,7 +38,51 @@ public class CarExample {
             }
         }
 
-        System.out.println(moreEfficientModel);
+        System.out.println("Modelo mais eficiente: " + moreEfficientModel + " - " + bestConsumption + " Km/l");
 
+        Double worstConsumption = Collections.min(popularCars.values());
+        String lessEfficientModel = "";
+
+        for (Map.Entry<String, Double> entry : entries) {
+            if (entry.getValue().equals(worstConsumption)) {
+                lessEfficientModel = entry.getKey();
+            }
+        }
+
+        System.out.println("Modelo menos eficiente: " + lessEfficientModel + " - " + worstConsumption + " Km/l");
+
+        Double sum = 0d;
+        for (Double consumption : popularCars.values()) {
+            sum += consumption;
+        }
+
+        System.out.println("Soma do comsumos = " + sum);
+
+        System.out.println("Média dos consumos = " + sum / popularCars.size());
+
+        Iterator<Double> iterator = popularCars.values().iterator();
+        while (iterator.hasNext()) {
+            if (iterator.next() < 13d) {
+                iterator.remove();
+            }
+        }
+
+        System.out.println("Carros com consumo maior ou igual a 13 Km/l = " + popularCars);
+
+        Map<String, Double> popularCarsInLinkedHashMap = new LinkedHashMap<>();
+        popularCarsInLinkedHashMap.put("Honda Accord", 21d);
+        popularCarsInLinkedHashMap.put("Bmw 320i", 15d);
+        popularCarsInLinkedHashMap.put("Honda Civic", 12d);
+        popularCarsInLinkedHashMap.put("Ford Fusion", 13d);
+        popularCarsInLinkedHashMap.put("Hyundai Azera", 12d);
+        popularCarsInLinkedHashMap.put("Chevrolet Omega", 8d);
+        System.out.println("Carros em ordem de inserção = " + popularCarsInLinkedHashMap);
+
+        Map<String, Double> popularCarsInTreeMap = new TreeMap<>(popularCarsInLinkedHashMap);
+        System.out.println("Carros em Ordem Alfabética = " + popularCarsInTreeMap);
+
+        popularCars.clear();
+
+        System.out.println(popularCars.isEmpty());
     }
 }
