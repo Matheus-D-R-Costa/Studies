@@ -1,8 +1,6 @@
-package edu.dio.aulas.collections.stream.methods;
+package edu.dio.aulas.collections.stream.lambda;
 
 import java.util.*;
-import java.util.function.Function;
-import java.util.function.ToLongFunction;
 
 public class Main {
 

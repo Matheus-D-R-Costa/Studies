@@ -1,4 +1,4 @@
-package edu.dio.aulas.collections.stream.methods;
+package edu.dio.aulas.collections.stream.lambda;
 
 public class Contact {
 
