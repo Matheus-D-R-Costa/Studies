@@ -1,0 +1,41 @@
+plugins {
+    // Apply the application plugin to add support for building a CLI application in Java.
+    id 'application'
+}
+
+application {
+    // Define the main class for the application.
+    mainClass = 'Project.App'
+}
+
+
+println "testing aplication"
+
+def variable = 10
+println "variable value = $variable"
+
+variable = "new value"
+println "variable value = $variable"
+
+function (50, 23)
+def function(minValue, maxValue) {
+	def range = minValue - maxValue;
+	println "range = $range"
+}
+
+def myClosure = {
+	println "inside function clousure"
+}
+
+def a = myClosure
+a()
+
+class People {
+	String name = "Cavalo Johnson"
+	def showName () {
+		println "name = $name"
+	}
+}
+
+People people = new People()
+people.showName()
