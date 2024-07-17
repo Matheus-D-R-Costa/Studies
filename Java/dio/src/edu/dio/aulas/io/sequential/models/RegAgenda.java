@@ -1,4 +1,4 @@
-package edu.dio.aulas.io;
+package edu.dio.aulas.io.sequential.models;
 
 public class RegAgenda {
     private String name;
@@ -15,11 +15,23 @@ public class RegAgenda {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public String getAddress() {
         return address;
     }
 
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
     public String getTelephone() {
         return telephone;
+    }
+
+    public void setTelephone(String telephone) {
+        this.telephone = telephone;
     }
 }

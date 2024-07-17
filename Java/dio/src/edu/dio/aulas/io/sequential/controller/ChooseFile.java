@@ -1,4 +1,4 @@
-package edu.dio.aulas.io;
+package edu.dio.aulas.io.sequential.controller;
 
 import javax.swing.*;
 import java.io.File;

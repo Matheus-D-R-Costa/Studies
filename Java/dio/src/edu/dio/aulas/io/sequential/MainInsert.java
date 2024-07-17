@@ -1,10 +1,13 @@
-package edu.dio.aulas.io;
+package edu.dio.aulas.io.sequential;
+
+import edu.dio.aulas.io.sequential.controller.ChooseFile;
+import edu.dio.aulas.io.sequential.models.RegAgenda;
 
 import javax.swing.*;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 
-public class Main {
+public class MainInsert {
 
     public static void main(String[] args) {
         try {
