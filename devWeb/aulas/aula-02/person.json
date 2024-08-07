@@ -1,0 +1,12 @@
+{
+  "name": "Matheus",
+  "age": "69",
+  "status": "true",
+  "height": "1.71",
+  "address": {
+    "state": "Xavaska",
+    "city": "Burosk",
+    "neighborhood": "São Jebão do sul"
+  },
+  "owners": ["fatalmodel", "JhonBet"]
+}

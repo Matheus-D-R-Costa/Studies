@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Jeberson",
+    "phone": "48991887766",
+    "email": "jeberson@protonmail.com",
+    "socialmedias": [
+      {
+        "name": "facebook",
+        "link": "https://facebook.com"
+      },
+
+      {
+        "name": "instagram",
+        "link": "https://instagram.com"
+      }
+    ]
+  },
+
+  {
+    "name": "Jamal",
+    "phone": "21991885549",
+    "email": "kingJamal@hotmail.com",
+    "socialmedias": [
+      {
+        "name": "instagram",
+        "link": "https://instagram.com"
+      }
+    ]
+  }
+]
