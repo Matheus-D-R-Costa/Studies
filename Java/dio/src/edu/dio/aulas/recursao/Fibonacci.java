@@ -3,7 +3,7 @@ package edu.dio.aulas.recursao;
 public class Fibonacci {
 
     public static void main(String[] args) {
-        int n= 45;
+        int n= 10;
 
         Long startTime = System.currentTimeMillis();
         Integer nonRecursiveResult = nonRecursiveFibonacci(n);
