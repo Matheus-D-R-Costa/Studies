@@ -1,6 +1,10 @@
 package service
 
-import "database/sql"
+import (
+	"database/sql"
+	"fmt"
+	"time"
+)
 
 type Book struct {
 	Id int
@@ -80,7 +84,7 @@ func (service *BookService) GetById(id int) (*Book, error) {
 }
 
 func (service *BookService) Update(book *Book) error {
-	query := "UPDATE Books SET title = ?, author = ?, genre = ?, WHERE id = ?"
+	query := "UPDATE Books SET title = ?, author = ?, genre = ? WHERE id = ?"
 
 	_, err := service.db.Exec(query, book.Title, book.Author, book.Genre, book.Id)
 
@@ -94,5 +98,37 @@ func (service *BookService) Delete(id int) error {
 	_, err := service.db.Exec(query, id)
 
 	return err
+
+}
+
+func (service *BookService) SimulateReading(bookId int, duration time.Duration, results chan<-string) {
+	book, err := service.GetById(bookId)
+	if err != nil || book == nil {
+		results <- fmt.Sprintf("Book %d not found")
+	}
+
+	time.Sleep(duration)
+
+	results <- fmt.Sprintf("Book %d read", book.Title)
+
+}
+
+func (service *BookService) SimulateMultipleReadings(bookIds []int, duration time.Duration) []string {
+	results := make(chan string, len(bookIds))
+
+	for _, id := range bookIds {
+		go func (bookId int)  {
+			service.SimulateReading(bookId, duration,results)
+		}(id)
+	}
+
+	var responses []string
+	for range bookIds {
+		responses = append(responses, <-results)
+	}
+
+	close(results)
+
+	return responses
 
 }
