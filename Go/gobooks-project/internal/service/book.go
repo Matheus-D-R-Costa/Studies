@@ -7,10 +7,10 @@ import (
 )
 
 type Book struct {
-	Id int
-	Title string
+	Id     int
+	Title  string
 	Author string
-	Genre string
+	Genre  string
 }
 
 type BookService struct {
@@ -19,6 +19,65 @@ type BookService struct {
 
 func NewBookService(database *sql.DB) *BookService {
 	return &BookService{db: database}
+}
+
+func (service *BookService) SimulateMultipleReadings(bookIds []int, duration time.Duration) []string {
+	results := make(chan string, len(bookIds))
+
+	for _, id := range bookIds {
+		go func(bookId int) {
+			service.SimulateReading(bookId, duration, results)
+		}(id)
+	}
+
+	var responses []string
+	for range bookIds {
+		responses = append(responses, <-results)
+	}
+
+	close(results)
+
+	return responses
+
+}
+
+func (service *BookService) SimulateReading(bookId int, duration time.Duration, results chan<- string) {
+	book, err := service.GetById(bookId)
+	if err != nil || book == nil {
+		results <- fmt.Sprintf("Book %d not found")
+	}
+
+	time.Sleep(duration)
+
+	results <- fmt.Sprintf("Book %d read", book.Title)
+
+}
+
+func (service *BookService) SearchByTitle(title string) ([]Book, error) {
+	query := "SELECT * FROM Books WHERE title = ?"
+
+	rows, err := service.db.Query(query, "%"+title+"%")
+	if err != nil {
+		return nil, err
+	}
+
+	defer rows.Close()
+
+	var books []Book
+	for rows.Next() {
+		var book Book
+
+		err := rows.Scan(&book.Id, &book.Title, &book.Author, &book.Genre)
+		if err != nil {
+			return nil, err
+		}
+
+		books = append(books, book)
+
+	}
+
+	return books, nil
+
 }
 
 func (service *BookService) Create(book *Book) error {
@@ -59,7 +118,7 @@ func (service *BookService) GetAll() ([]Book, error) {
 			return nil, err
 		}
 
-		books = append(books,book)
+		books = append(books, book)
 
 	}
 
@@ -98,37 +157,5 @@ func (service *BookService) Delete(id int) error {
 	_, err := service.db.Exec(query, id)
 
 	return err
-
-}
-
-func (service *BookService) SimulateReading(bookId int, duration time.Duration, results chan<-string) {
-	book, err := service.GetById(bookId)
-	if err != nil || book == nil {
-		results <- fmt.Sprintf("Book %d not found")
-	}
-
-	time.Sleep(duration)
-
-	results <- fmt.Sprintf("Book %d read", book.Title)
-
-}
-
-func (service *BookService) SimulateMultipleReadings(bookIds []int, duration time.Duration) []string {
-	results := make(chan string, len(bookIds))
-
-	for _, id := range bookIds {
-		go func (bookId int)  {
-			service.SimulateReading(bookId, duration,results)
-		}(id)
-	}
-
-	var responses []string
-	for range bookIds {
-		responses = append(responses, <-results)
-	}
-
-	close(results)
-
-	return responses
 
 }
