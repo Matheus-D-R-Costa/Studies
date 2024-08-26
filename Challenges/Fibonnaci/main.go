@@ -19,11 +19,11 @@ func main() {
 
 	wg.Add(4)
 
-	// Goroutine para recursiveFibonnaci
+	// Goroutine para recursiveFibonacci
 	go func() {
 		defer wg.Done()
 		startTime := time.Now()
-		result := recursiveFibonnaci(40) // Ajuste o valor de n aqui
+		result := recursiveFibonnaci(40)
 		endTime := time.Now()
 		executionTime := endTime.Sub(startTime)
 		results <- fmt.Sprintf("Recursive Fibonacci: %d, Levou %v microsegundos e %d operações", result, executionTime.Microseconds(), recursiveCount)
@@ -39,7 +39,7 @@ func main() {
 		results <- fmt.Sprintf("Interactive Fibonacci: %d, Levou %v microsegundos e %d operações", result, executionTime.Microseconds(), interactiveCount)
 	}()
 
-	// Goroutine para matrixFibonnaci
+	// Goroutine para matrixFibonacci
 	go func() {
 		defer wg.Done()
 		startTime := time.Now()
