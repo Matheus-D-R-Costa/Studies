@@ -110,7 +110,7 @@ func power(F *Matrix, n int) {
 	M := Matrix{{1, 1}, {1, 0}}
 	for i := 2; i <= n; i++ {
 		multiply(F, M)
-		matrixCount++ // Contador de operações para multiplicações
+		matrixCount++
 	}
 }
 
