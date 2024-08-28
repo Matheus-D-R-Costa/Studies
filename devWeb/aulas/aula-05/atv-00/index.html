@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Veículos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Cadastro de Veículo</h1>
+    <form>
+        <label for="input-campo-nome">Nome:</label>
+        <input type="text" id="input-campo-nome" name="nome" autofocus maxlength="50" minlength="3"
+            placeholder="Preencha com no mínimo cinco caracteres" required>
+
+        <div class="checkbox-group">
+            <label for="input-opcionais">Opcionais:</label>
+            <input type="checkbox" id="teto-solar" name="opcionais" value="teto-solar">
+            <label for="teto-solar">Teto Solar</label>
+
+            <input type="checkbox" id="banco-couro" name="opcionais" value="banco-couro">
+            <label for="banco-couro">Banco de Couro</label>
+
+            <input type="checkbox" id="tracao-traseira" name="opcionais" value="tracao-traseira">
+            <label for="tracao-traseira">Tração Traseira</label>
+        </div>
+
+        <div class="radio-group">
+            <label>Marca:</label>
+            <input type="radio" id="chevrolet" name="marca" value="gm" required>
+            <label for="chevrolet">Chevrolet</label>
+
+            <input type="radio" id="volkswagen" name="marca" value="vw">
+            <label for="volkswagen">Volkswagen</label>
+
+            <input type="radio" id="fiat" name="marca" value="fiat">
+            <label for="fiat">Fiat</label>
+        </div>
+
+        <label for="desc">Descrição:</label>
+        <textarea name="descricao" id="desc" rows="5" placeholder="Descreva o veículo aqui..."></textarea>
+
+        <label for="modelo">Modelo:</label>
+        <select name="modelo" id="modelo" required>
+            <option value="" disabled selected>Selecione um modelo</option>
+            <option value="astra">Astra</option>
+            <option value="nivus">Nivus</option>
+            <option value="tcross">T-Cross</option>
+        </select>
+
+        <input type="submit" value="Cadastrar">
+        <input type="reset" value="Cancelar">
+    </form>
+</body>
+
+</html>
