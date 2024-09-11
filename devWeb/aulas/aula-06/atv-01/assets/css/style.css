@@ -7,7 +7,6 @@ body {
   padding: 0;
 }
 
-/* Header */
 .header-content {
   display: flex;
   justify-content: space-between;
@@ -45,7 +44,6 @@ body {
   transform: scale(1.05);
 }
 
-/* Hero */
 .hero {
   display: flex;
   flex-direction: column;
@@ -81,28 +79,4 @@ body {
 .button-contact:hover {
   background-color: #ffbb33;
   transform: scale(1.05);
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-  .header-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .header-icons {
-    margin-bottom: 1rem;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .button-contact {
-    padding: 0.75rem 1.5rem;
-  }
 }
