@@ -1,0 +1,17 @@
+.navbar-dark {
+  background-color: #2a2b2d;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+}
+
+.btn-remove {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-remove:hover {
+  background-color: #c82333;
+}
