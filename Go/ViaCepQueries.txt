@@ -1,0 +1,2 @@
+CEP: 88130-600, Logradouro: Avenida Elza Lucchi, Bairro: Ponte do Imaruim, Localidade: Palhoça, UF: SC
+CEP: 88801-040, Logradouro: Rua Marechal Floriano Peixoto, Bairro: Centro, Localidade: Criciúma, UF: SC
