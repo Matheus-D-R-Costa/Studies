@@ -143,6 +143,7 @@ public class BinaryTree<T extends Comparable<T>> {
         } catch (NullPointerException error) {
             System.out.println("Conteudo nao existente. Bloco catch");
         }
+
     }
 
 }
