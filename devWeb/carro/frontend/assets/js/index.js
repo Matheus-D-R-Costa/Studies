@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <td>${carro.ano}</td>
                 <td>${carro.cor}</td>
                 <td class="text-center">
-                    <button class="btn btn-warning btn-sm" onclick="editarCarro(${carro.id})">Editar</button>
+                    <button class="btn btn-warning btn-sm" onclick="redirecionarEdicao(${carro.id})">Editar</button>
                     <button class="btn btn-danger btn-sm" onclick="excluirCarro(${carro.id})">Excluir</button>
                 </td>
             </tr>
@@ -24,10 +24,20 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 })
 
+/**
+ * Redireciona para a página de edicao com o id do carro como parâmetro
+ * @param {number} id - Id do carro a ser editado
+ */
 function redirecionarEdicao(id) {
     window.location.href = './editar.html?id='+id;
 }
 
+/**
+ * Solicita confirmação e tenta excluir um carro identificado pelo seu id.
+ * envia uma requisição DELETE ao servidor e recarrega a página após a exclusão bem-sucedida.
+ * Alerta o usuário com o resultado da operação.
+ * @param {number} id - O id do carro a ser excluído.
+ */
 async function excluirCarro(id) {
     if (confirm('Tem certeza que deseja excluir este carro?')) {
         try {

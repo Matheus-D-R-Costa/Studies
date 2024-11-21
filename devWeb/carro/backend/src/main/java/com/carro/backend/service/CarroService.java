@@ -35,13 +35,16 @@ public class CarroService {
     }
 
     @Transactional
-    public void updateById(Long id, CarroModel clientModel) {
-        Optional<CarroModel> carroInDatabase = repository.findById(id);
+    public void updateById(Long id, CarroModel carroModel) {
+        CarroModel carroInDatabase = repository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Carro Inexistente"));
 
-        if (carroInDatabase.isEmpty()) throw new RuntimeException("Carro Inexistente");
+        carroInDatabase.setMarca(carroModel.getMarca());
+        carroInDatabase.setModelo(carroModel.getModelo());
+        carroInDatabase.setAno(carroModel.getAno());
+        carroInDatabase.setCor(carroModel.getCor());
 
-        saveCarro(clientModel);
-
+        saveCarro(carroInDatabase);
     }
 
     private void saveCarro(CarroModel carModel) {

@@ -25,6 +25,11 @@ public class CarroController {
         return ResponseEntity.status(HttpStatus.OK).body(service.findAll());
     }
 
+    @GetMapping("/{id}")
+    public ResponseEntity<CarroModel> findById(@PathVariable Long id) {
+        return ResponseEntity.status(HttpStatus.OK).body(service.findById(id));
+    }
+
     @PostMapping
     public ResponseEntity<Void> create(@RequestBody CarroModel carroModel) {
         service.create(carroModel);

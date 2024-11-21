@@ -18,7 +18,7 @@ public class CarroModel {
 
     private String marca;
     private String modelo;
-    private Integer AnoFabricacao;
+    private Integer ano;
     private String cor;
 
 }
