@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f1daf669-d1b2-4680-ab6c-fa56db50a328" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../pessoa-api/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pessoa-api/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pessoa-api/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pessoasapi/PessoasApiApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pessoasapi/controllers/PersonController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pessoasapi/models/PersonModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pessoasapi/repository/PersonRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pessoasapi/services/PersonService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/pessoasapi/PessoasApiApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../carro/backend/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../carro/backend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../carro/backend/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../carro/backend/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../carro/backend/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../carro/backend/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../carro/backend/src/main/java/com/carro/backend/BackendApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../carro/backend/src/main/java/com/carro/backend/controllers/CarroController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../carro/backend/src/main/java/com/carro/backend/models/CarroModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../carro/backend/src/main/java/com/carro/backend/repositories/CarroRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../carro/backend/src/main/java/com/carro/backend/service/CarroService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../carro/backend/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../carro/backend/src/test/java/com/carro/backend/BackendApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../carro/frontend/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../carro/frontend/assets/js/editar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../carro/frontend/assets/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../carro/frontend/assets/js/novo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../carro/frontend/editar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../carro/frontend/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../carro/frontend/novo.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2oRza0ZxwmXsiEEPTJhxRdDUcnX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../indicadores/indicador-04/BackEnd" />
+  </component>
+  <component name="RunManager">
+    <configuration name="PessoasApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="pessoasApi" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.pessoasapi.PessoasApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f1daf669-d1b2-4680-ab6c-fa56db50a328" name="Changes" comment="" />
+      <created>1730847237175</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730847237175</updated>
+      <workItem from="1730847238301" duration="399000" />
+      <workItem from="1730847867354" duration="294000" />
+      <workItem from="1730933439767" duration="26000" />
+      <workItem from="1732656149513" duration="405000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
