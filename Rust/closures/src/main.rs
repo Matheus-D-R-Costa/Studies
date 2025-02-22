@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+use std::{thread, time::Duration};
+
+>>>>>>> 51bd311e7717d706be17bf46da722dc8c162452b
 #[derive(Debug, PartialEq, Copy, Clone)]
 enum ShirtColor {
     Red,
@@ -31,7 +36,32 @@ impl Inventory {
     }
 }
 
+<<<<<<< HEAD
 fn main() {
+=======
+#[derive(Debug)]
+struct Rectangle {
+    width: u32,
+    _height: u32,
+}
+
+fn main() {
+
+    let _expensive_clousure = |num: u32| -> u32 {
+        println!("Calculating slowly...");
+        thread::sleep(Duration::from_secs(2));
+        num
+    };
+
+    let closure = |num| {
+        println!("Calculating slowly...");
+        thread::sleep(Duration::from_secs(2));
+        num
+    };
+
+    let _s = closure(String::from("hello"));
+
+>>>>>>> 51bd311e7717d706be17bf46da722dc8c162452b
     let store = Inventory {
         shirts: vec![ShirtColor::Blue, ShirtColor::Red, ShirtColor::Blue],
     };
@@ -49,4 +79,46 @@ fn main() {
         "The user with preference {:?} gets {:?}",
         user_pref2, giveaway2
     );
+<<<<<<< HEAD
 }
+=======
+
+    let list = vec![1, 2, 3];
+    println!("Before defining closure: {list:?}");
+    let only_borrows = || println!("From closure: {list:?}");
+    println!("Before calling closure: {list:?}");
+    only_borrows();
+    println!("After calling closure: {list:?}");
+
+    let mut list = vec![1, 2, 3];
+    println!("Before defining closure: {list:?}");
+    let mut borrows_mutably = || list.push(7);
+    borrows_mutably();
+    println!("After calling closure: {list:?}");
+
+    let list = vec![1, 2, 3];
+    println!("Before defining closure: {list:?}");
+    thread::spawn(move || println!("From thread: {list:?}"))
+        .join()
+        .unwrap();
+
+    let mut list = [
+        Rectangle { width: 10, _height: 1 },
+        Rectangle { width: 3, _height: 5 },
+        Rectangle { width: 7, _height: 12 },
+    ];
+
+    let mut num_sort_operations = 0;
+    list.sort_by_key(|r| {
+        num_sort_operations += 1;
+        r.width
+    });
+    println!("{list:#?}, sorted in {num_sort_operations} operations");
+    
+}
+
+// fn  add_one_v1   (x: u32) -> u32 { x + 1 }
+// let add_one_v2 = |x: u32| -> u32 { x + 1 };
+// let add_one_v3 = |x|             { x + 1 };
+// let add_one_v4 = |x|               x + 1  ;
+>>>>>>> 51bd311e7717d706be17bf46da722dc8c162452b
