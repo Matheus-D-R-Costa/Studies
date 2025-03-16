@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "boxer",
+    "cons_list"
+, "cycle_leak", "rc_pointer", "ref_cell_pointer"]
